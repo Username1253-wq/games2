@@ -6,20 +6,13 @@
     <title>Retro Arcade</title>
     <style>
         body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; }
-        #game { width: 100vw; height: 100vh; }
+        iframe { width: 100vw; height: 100vh; border: none; }
         .back-btn { position: absolute; top: 10px; left: 10px; background: rgba(0,0,0,0.6); color: white; padding: 8px 12px; text-decoration: none; border-radius: 4px; font-family: sans-serif; font-size: 12px; z-index: 9999; }
     </style>
 </head>
 <body>
     <a href="index.html" class="back-btn">← Back to Menu</a>
-    <div id="game"></div>
-    <script>
-        EmuJS = {
-            system: "gba", // Can change to nes, snes, segaMD
-            gameUrl: "https://github.io", // Sample unblocked ROM link
-            startOnLoad: true
-        };
-    </script>
-    <script src="https://github.io"></script>
+    <!-- Uses an iframe-friendly open emulator deployment link -->
+    <iframe src="https://ubg89.github.io/ubg89/" allowfullscreen="true"></iframe>
 </body>
 </html>
