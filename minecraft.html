@@ -12,7 +12,10 @@
 </head>
 <body>
     <a href="index.html" class="back-btn">← Back to Menu</a>
-    <!-- Bypasses x-frame rules using a raw archive client mirror -->
-    <iframe src="https://eaglercraftx1-8.github.io/" allowfullscreen="true" allow="autoplay; gamepad"></iframe>
+    <!-- Added explicit cross-origin permission flags to solve the black screen block -->
+    <iframe src="https://eaglercraftx1-8.github.io/" 
+            allowfullscreen="true" 
+            allow="autoplay; gamepad; cross-origin-isolated; xr-spatial-tracking" 
+            loading="lazy"></iframe>
 </body>
 </html>
